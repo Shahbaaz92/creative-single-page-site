@@ -73,16 +73,18 @@ body {
   display: flex;
 }
 .detail-1-img {
-  background: url(assets/desktop/image-strategic.jpg), 100% 100% no-repeat;
+  background: url(assets/desktop/image-strategic.jpg);
+  background-position: left;
   background-repeat: no-repeat;
   height: 100%;
   width: 50%;
 }
 .detail-1-info {
+  overflow-x: hidden;
   height: 784px;
   color: #ffffff;
   width: 50%;
-  background-color: aqua;
+  background-color: #191921;
 }
 
 .detail-1-info-div {
@@ -141,4 +143,49 @@ body {
   line-height: 88px;
   opacity: 0.25;
   z-index: 0;
+}
+
+.detail-3 {
+  height: 728px;
+  width: 100%;
+  display: flex;
+}
+.detail-3-info {
+  width: 40%;
+  height: 528px;
+  background-color: #191921;
+  z-index: 10;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 165px;
+  gap: 50px;
+}
+.detail-3-img {
+  position: absolute;
+  right: 0;
+  z-index: 0;
+  width: 60%;
+  height: 728px;
+  background: url("assets/desktop/image-slide-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top right;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: end;
+  color: #fff;
+}
+.detail-3-img-info {
+  margin-right: 150px;
+  margin-bottom: 60px;
+  text-align: right;
+}
+#footer {
+  padding: 120px 165px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
