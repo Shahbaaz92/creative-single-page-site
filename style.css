@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@400;800&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +9,42 @@ body {
   background-color: aquamarine;
   display: flex;
   justify-content: center;
+  font-family: "Commissioner", sans-serif;
+  color: #000;
+  font-family: Commissioner;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+h1 {
+  font-size: 80px;
+  font-weight: 800;
+  line-height: 88px;
+}
+h2 {
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 64px;
+}
+h3 {
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 32px;
+}
+button {
+  color: #fff;
+  font-family: Commissioner;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  border: none;
+  padding: 22px 44px;
+  background-color: #f94f4f;
+}
+.red {
+  color: #f94f4f;
 }
 #main-container {
   background-color: #ffffff;
@@ -21,30 +59,35 @@ body {
 }
 .nav {
   width: 100%;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .nav-img {
   padding-left: 165px;
-  width: 50%;
+  width: 40%;
 }
 .nav-links {
+  padding-left: 30px;
   padding-top: 60px;
   padding-bottom: 60px;
   padding-right: 165px;
   background: #f94f4f;
-  width: 50%;
+  width: 60%;
   height: auto;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
+  gap: 30px;
 }
 .nav-links li {
   list-style: none;
   padding: 0;
   margin: 0;
+  font-size: 16px;
+}
+.nav-links button {
+  background-color: #191921;
 }
 .hero {
   background: url("assets/desktop/image-hero.jpg");
@@ -54,10 +97,10 @@ body {
   width: 100%;
   height: 800px;
 }
-.hero-des {
+.hero-info {
   padding-left: 165px;
   margin-top: 112px;
-  width: 40%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -88,8 +131,22 @@ body {
 }
 
 .detail-1-info-div {
-  width: 50%;
-  padding: 200px 150px;
+  width: 60%;
+  height: 100%;
+  margin-left: 150px;
+  /* padding: 200px 150px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 45px;
+}
+.design-btn {
+  padding: 0;
+  padding-bottom: 10px;
+  background-color: #191921;
+  color: #f94f4f;
+  border-bottom: 2px solid #f94f4f;
 }
 .detail-2 {
   height: 900px;
@@ -101,7 +158,7 @@ body {
   align-items: center;
 }
 .detail-2-info {
-  width: 40%;
+  width: 50%;
   margin-left: 165px;
   z-index: 10;
 }
@@ -114,9 +171,10 @@ body {
   height: 1100px;
 }
 .points-box {
+  color: #ffffff;
   margin-left: 300px;
   width: 40%;
-  margin-top: 240px;
+  margin-top: 200px;
   display: flex;
   flex-direction: column;
   gap: 100px;
@@ -133,8 +191,8 @@ body {
 }
 .points span {
   position: absolute;
-  top: -40px;
-  left: -40px;
+  top: -45px;
+  left: -60px;
   color: #fff;
   font-family: Commissioner;
   font-size: 80px;
